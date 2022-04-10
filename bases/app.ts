@@ -1,14 +1,52 @@
+(() => {
 
-const msg: string = 'Hola mundo' //Constante 'msg' de tipo String 
+    // Tipos
+    const batman: string = 'Bruce';
+    const superman: string = 'Clark';
+  
+    const existe: boolean = false;
+  
+    // Tuplas
+    const parejaHeroes: [string, string] = [batman,superman];
+    const villano: [string, number, boolean] = ['Lex Lutor',5,true];
+  
+    // Arreglos
+    const aliados: string[] = ['Mujer Maravilla','Acuaman','San', 'Flash'];
+  
+    //Enumeraciones
+    enum Fuerza{
+      Acuaman = 0,
+      Batman = 1,
+      Flash = 5,
+      Superman = 100,
+      
+    }
 
-const heroe = {
-    name: 'Ironman',
-    age: 45
-}
 
-heroe.age = 50
+    const fuerzaBatman: Fuerza = Fuerza.Batman;
+    const fuerzaAcuaman: Fuerza = Fuerza.Acuaman;
+    const fuerzaFlash: Fuerza = Fuerza.Flash;
+    const fuerzaSuperman: Fuerza = Fuerza.Superman;
+    
 
-console.log(heroe.age + 1)
-
-//ejecutamos en consola "tsc app" para traducir el código de TS a JS
-//Con el comando tsc --init creamos el archivo tsconfig.json
+    // Retorno de funciones
+    function activar_batiseñal():string{
+      return 'activada';
+    }
+  
+    function pedir_ayuda():void{
+      console.log('Auxilio!!!');
+    }
+  
+    // Aserciones de Tipo
+    const poder: any = '100';
+    const largoDelPoder:number = (poder as string).length;
+    console.log( largoDelPoder );
+  
+  
+  })()
+  
+  
+  /**
+   * Por defecto, undefined es asignable a una variable de tipo Null.
+   */
