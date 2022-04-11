@@ -26,7 +26,7 @@ const unirheroes = ( ...personas: string[] ): string => {
 
 
 // Tipo funcion
-const noHaceNada = ( numero: number, texto: string, booleano: boolean, arreglo: string[] ): => {}
+const noHaceNada = ( numero: number, texto: string, booleano: boolean, arreglo: string[] ) => {}
 
 // Crear el tipo de funcion que acepte la funcion "noHaceNada"
 let noHaceNadaTampoco: (n: number, s: string, b: boolean, a: string[]) => void;
