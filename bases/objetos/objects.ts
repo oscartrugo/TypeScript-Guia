@@ -1,6 +1,6 @@
 (() => {
 
-    let flash: { name: string, age?: number, powers: string[] } = { //Objeto literal de JavaScript
+    let flash: { name: string, age?: number, powers: string[], getName?: () => string } = { //Objeto literal de JavaScript
         name: 'Barry Allen',
         age: 24,
         powers: ['Super velocidad', 'viajar en el tiempo']
@@ -10,9 +10,9 @@
         name: 'Clark Kent',
         age: 24,
         powers: ['Super fuerza'],
-        // getNombre(){
-        //     return this.name;
-        // }
+        getName(){
+            return this.name;
+        }
     }
 
     console.log(flash)
