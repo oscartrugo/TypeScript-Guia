@@ -1,6 +1,5 @@
 "use strict";
 (() => {
-    //Propiedad de TS
     let AudioLevel;
     (function (AudioLevel) {
         AudioLevel[AudioLevel["min"] = 0] = "min";
@@ -11,9 +10,4 @@
     console.log(currentAudio);
     console.log(AudioLevel);
 })();
-/**
- * El uso de las enumeraciones ayuda a trabajar con valores que tengan un sentido
- * semántico fácil de leer, valores que tengan sentido al momento de leer el código
- *
- */ 
 //# sourceMappingURL=enums.js.map

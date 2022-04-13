@@ -5,7 +5,7 @@
     };
     let noName;
     noName = 'Oscar';
-    const name = fullName(noName, 'Trujillo'); //Parámetros obligatorios
+    const name = fullName(noName, 'Trujillo');
     console.log({ name });
 });
 //# sourceMappingURL=args-required.js.map

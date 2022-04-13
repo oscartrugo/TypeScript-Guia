@@ -1,14 +1,14 @@
 "use strict";
 (() => {
     const fullName = (firstName, lastName, upper = false) => {
-        if (upper) { //si upper es true retorna...
+        if (upper) {
             return `${firstName} ${lastName || '------'}`.toUpperCase();
         }
-        else { //Si es false retorna...
+        else {
             return `${firstName} ${lastName || '------'}`;
         }
     };
-    const name = fullName('Oscar', 'Trujillo', true); //El ? en el argumento lastName permite no introducir el segundo argumento 
+    const name = fullName('Oscar', 'Trujillo', true);
     console.log({ name });
 });
 //# sourceMappingURL=args-default.js.map

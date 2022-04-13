@@ -5,7 +5,7 @@
     };
     let noName;
     noName = 'Oscar';
-    const name = fullName(noName); //El ? en el argumento lastName permite no introducir el segundo argumento 
+    const name = fullName(noName);
     console.log({ name });
 });
 //# sourceMappingURL=args-optional.js.map

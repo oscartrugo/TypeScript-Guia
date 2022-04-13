@@ -1,6 +1,5 @@
 "use strict";
 (() => {
-    //Flash es un objeto de tipo Hero, hereda todos sus atributos y métodos
     let flash = {
         name: 'Barry Allen',
         age: 24,
