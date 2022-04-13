@@ -1,6 +1,6 @@
 (() => {
 
-    type Avengers = {
+    type Avengers = { //Creamos el tipo Avengers
         nick: string;
         ironman: string;
         vision: string;
@@ -8,7 +8,7 @@
         poder: number;
     }
 
-    const avengers: Avengers = {
+    const avengers: Avengers = { //Creamos el objeto 'avengers' de tipo 'Avengers'
         nick: 'Samuel L. Jackson',
         ironman: 'Robert Downey Jr',
         vision: 'Paul Bettany',
@@ -19,11 +19,15 @@
     // const {poder, vision} = avengers //Sacamos del objeto avengers las propiedades poder, vision
     // console.log(poder.toFixed(2), vision.toUpperCase())
 
-    const printAvenger = ( { ironman, ...resto }:Avengers)=>{
-        console.log(ironman, resto)
+    const printAvenger = ( { ironman, ...resto }:Avengers)=>{//Hacemos desestructuración del objeto
+        console.log(ironman, resto) //Imprimimos las propiedades
     }
 
-    printAvenger(avengers)
+    // printAvenger(avengers)
+
+    const avengersArr: [string, boolean, number] = ['Cap. América', true, 150.12]
+    const [capi, ironman, ] = avengersArr
+    console.log({capi, ironman})
 
 
 })()
