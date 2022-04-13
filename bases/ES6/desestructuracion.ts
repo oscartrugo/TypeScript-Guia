@@ -27,7 +27,7 @@
 
     const avengersArr: [string, boolean, number] = ['Cap. América', true, 150.12]
     const [capi, ironman, ] = avengersArr
-    console.log({capi, ironman})
+    // console.log({capi, ironman})
 
 
 })()
