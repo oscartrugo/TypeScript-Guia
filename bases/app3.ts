@@ -1,4 +1,4 @@
-
+(() => {
 // Objetos
 
 type Autos = {
@@ -81,3 +81,5 @@ let mystique: (Charles | Apocalipsis);
 
 mystique = charles;
 mystique = apocalipsis;
+
+})()

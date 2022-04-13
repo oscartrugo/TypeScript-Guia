@@ -10,5 +10,5 @@
 
     const villian = ['Omega rojo', 'Dormammu', 'Duende Verde']
 
-    villian.forEach( v => console.log(v.toUpperCase()))
+    number.forEach( v => console.log(v))
 })()
