@@ -20,7 +20,7 @@
 
     const avengers:Avenger[] = [ironman, thor, capAmerica]
 
-    for (const avenger of avengers) {
-        console.log(avenger.name, avenger.weapon) //Imprimimos el objeto(arreglo) avengers
-    }
+    // for (const avenger of avengers) {
+    //     // console.log(avenger.name, avenger.weapon) //Imprimimos el objeto(arreglo) avengers
+    // }
 })()
