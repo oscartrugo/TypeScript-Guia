@@ -14,3 +14,4 @@
     myFunction = saveTheWorld;
     console.log(myFunction()); //TypeScript infiere los tipos
 })();
+//# sourceMappingURL=function-type.js.map

@@ -11,3 +11,4 @@
     const name = fullName('Oscar', 'Trujillo', true); //El ? en el argumento lastName permite no introducir el segundo argumento 
     console.log({ name });
 });
+//# sourceMappingURL=args-default.js.map

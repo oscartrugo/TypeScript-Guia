@@ -32,11 +32,15 @@ const charles = {
     poder: "psiquico",
     estatura: 1.78
 };
+console.log('Paso por aquí');
+console.log('Paso por acá');
 const apocalipsis = {
     lider: true,
     miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
 };
+console.log(apocalipsis);
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 let mystique;
 mystique = charles;
 mystique = apocalipsis;
+//# sourceMappingURL=app3.js.map

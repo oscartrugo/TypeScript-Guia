@@ -8,3 +8,4 @@
     const name = fullName(noName); //El ? en el argumento lastName permite no introducir el segundo argumento 
     console.log({ name });
 });
+//# sourceMappingURL=args-optional.js.map

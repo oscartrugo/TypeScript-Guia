@@ -12,4 +12,6 @@
         powers: ['Super velocidad']
     }  
 
+    console.log(flash)
+
 })

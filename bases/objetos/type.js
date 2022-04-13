@@ -17,3 +17,4 @@
         powers: ['Artes marciales', 'Arqueria', 'Liderazgo']
     };
 });
+//# sourceMappingURL=type.js.map

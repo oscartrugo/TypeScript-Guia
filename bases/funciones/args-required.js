@@ -8,3 +8,4 @@
     const name = fullName(noName, 'Trujillo'); //Parámetros obligatorios
     console.log({ name });
 });
+//# sourceMappingURL=args-required.js.map

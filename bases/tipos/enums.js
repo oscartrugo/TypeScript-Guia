@@ -16,3 +16,4 @@
  * semántico fácil de leer, valores que tengan sentido al momento de leer el código
  *
  */ 
+//# sourceMappingURL=enums.js.map

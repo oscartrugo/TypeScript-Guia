@@ -62,16 +62,20 @@ const charles: Charles = {
   estatura: 1.78
 };
 
+console.log('Paso por aquí')
+
 type Apocalipsis = { //Segundo tipo para apocalipsis
   lider: boolean,
   miembros: string[]
 }
 
+console.log('Paso por acá')
+
 const apocalipsis: Apocalipsis = {
   lider: true,
   miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
 }
-
+console.log(apocalipsis)
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
 let mystique: (Charles | Apocalipsis);
 

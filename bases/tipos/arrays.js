@@ -9,3 +9,4 @@
     const villian = ['Omega rojo', 'Dormammu', 'Duende Verde'];
     villian.forEach(v => console.log(v.toUpperCase()));
 })();
+//# sourceMappingURL=arrays.js.map
