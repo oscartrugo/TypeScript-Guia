@@ -22,9 +22,9 @@
     }
 
     const antman: Avenger = new Avenger('Antman', 'Capitan', 'Scott Lang');
-    console.log(antman)
-    console.log(Avenger.avgAge) //Las props estáticas se pueden consumir de manera global haciendo referencia a la clase
-    console.log(Avenger.getavgAge())
+    // console.log(antman)
+    // console.log(Avenger.avgAge) //Las props estáticas se pueden consumir de manera global haciendo referencia a la clase
+    // console.log(Avenger.getavgAge())
 
 
 })()
