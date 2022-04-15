@@ -5,9 +5,9 @@
 
     let addNumbersFunction: addTwoNumbers;
 
-    addNumbersFunction = (b: number, c: number) => {
-        return b+c;
+    addNumbersFunction = (a: number, b: number) => {
+        return b+a;
     }
-    console.log(addNumbersFunction(5,7))
+    // console.log(addNumbersFunction(5,7))
 
 })()

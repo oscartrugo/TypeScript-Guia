@@ -56,9 +56,8 @@
 })();
 (() => {
     let addNumbersFunction;
-    addNumbersFunction = (b, c) => {
-        return b + c;
+    addNumbersFunction = (a, b) => {
+        return b + a;
     };
-    console.log(addNumbersFunction(5, 7));
 })();
 //# sourceMappingURL=main.js.map
