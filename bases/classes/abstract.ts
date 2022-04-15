@@ -28,7 +28,7 @@
         console.log(character.name)
     }
 
-    printName(magneto)
+    // printName(magneto)
 
 
 })()
