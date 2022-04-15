@@ -18,6 +18,11 @@
 })();
 (() => {
     class Mutant {
+        constructor() {
+            this.age = 4;
+            this.name = 'oscartrugo';
+            this.realName = 'Oscar';
+        }
         mutantPower(id) {
             return this.name + '' + this.realName;
         }
@@ -48,5 +53,12 @@
             return this.address.city;
         }
     };
+})();
+(() => {
+    let addNumbersFunction;
+    addNumbersFunction = (b, c) => {
+        return b + c;
+    };
+    console.log(addNumbersFunction(5, 7));
 })();
 //# sourceMappingURL=main.js.map
