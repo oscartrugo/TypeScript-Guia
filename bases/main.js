@@ -24,6 +24,9 @@
             id: 125,
             zip: 'KDCRNW',
             city: 'New York'
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
     const client2 = {
@@ -33,6 +36,9 @@
             id: 234,
             zip: 'ola',
             city: 'Toronto'
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
 })();

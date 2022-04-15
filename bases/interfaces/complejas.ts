@@ -2,8 +2,12 @@
 
     interface Client { //Interfaz principal
         name: string,
-        age: number, 
+        age?: number, 
         address: Address //Interfaz secundaria
+        getFullAddress(id: string):string; //Método que recibe y retorna un string
+        /**
+         * Una clase implementaría sí o sí este método, una interfaz no lo implementa.
+         */
     }
 
     interface Address {
@@ -19,7 +23,10 @@
             id: 125,
             zip: 'KDCRNW',
             city: 'New York'
-        }
+        },
+        getFullAddress(id:string) {
+            return this.address.city;
+        } 
     }
 
     const client2:Client = {
@@ -29,7 +36,10 @@
             id: 234,
             zip: 'ola',
             city: 'Toronto'
-        }
+        },
+        getFullAddress(id:string) {
+            return this.address.city;
+        } 
     }
     
 })()
