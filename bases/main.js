@@ -16,4 +16,24 @@
         powers: ['Artes marciales', 'Arqueria', 'Liderazgo']
     };
 })();
+(() => {
+    const client = {
+        name: 'Oscar',
+        age: 24,
+        address: {
+            id: 125,
+            zip: 'KDCRNW',
+            city: 'New York'
+        }
+    };
+    const client2 = {
+        name: 'Diana',
+        age: 23,
+        address: {
+            id: 234,
+            zip: 'ola',
+            city: 'Toronto'
+        }
+    };
+})();
 //# sourceMappingURL=main.js.map
