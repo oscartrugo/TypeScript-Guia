@@ -1,17 +1,9 @@
-import { Hero } from './classes/Hero';
-//import * as HeroClasses from './classes/Hero'; //Exportación con alias
-//import powers2, {Power} from './data/powers'; //Importamos por defecto
+import { printObject, genericFunction } from './generics/generics';
 
-
-// const ironman = new SuperHero('Ironman', 500, 45);
-const ironman = new Hero('Ironman', 2, 45);
-
-console.log(ironman)
-console.log(ironman.power) //Imprimimos el método getter del objeto ironman
-
-
-
-
-
-
-
+console.log( genericFunction(3.1416).toFixed(2) )
+console.log( genericFunction(new Date()).toFixed(2) )
+/**
+ * 
+ * Funciones genéricas son funciones que pueden recibir cualquier tipo de argumento.
+ * 
+ */
