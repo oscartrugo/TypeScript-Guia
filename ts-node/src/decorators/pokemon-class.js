@@ -24,16 +24,36 @@ define(["require", "exports"], function (require, exports) {
         // Object.seal(constructor)
         // Object.seal(constructor.prototype)
     };
+    function CheckValidPokemonId() {
+        return function (target, propertyKey, descriptor) {
+            const originalMethod = descriptor.value;
+            descriptor.value = (id) => {
+                if (id < 1 || id > 800) {
+                    return console.error('El ID del pokemon debe estar entre 1 y 800.');
+                }
+                else {
+                    return originalMethod(id);
+                }
+            };
+            // descriptor.value = () => console.log('Hola mundo');
+        };
+    }
     //Decoradores
     let Pokemon = class Pokemon {
         constructor(name) {
             this.name = name;
             this.publicAPI = 'https://pokeapi.co';
         }
+        savePokemonToDB(id) {
+            console.log(`Pokemon guardado en base de datos ${id}`);
+        }
     };
+    __decorate([
+        CheckValidPokemonId() //La mandamos a llamar porque es un factory decorator, se tiene que ejecutar
+    ], Pokemon.prototype, "savePokemonToDB", null);
     Pokemon = __decorate([
         bloquearPrototipo,
-        printToConsoleContidional(true)
+        printToConsoleContidional(false)
     ], Pokemon);
     exports.Pokemon = Pokemon;
 });
