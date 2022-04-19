@@ -38,6 +38,26 @@ define(["require", "exports"], function (require, exports) {
             // descriptor.value = () => console.log('Hola mundo');
         };
     }
+    //factory decorator
+    function readonly(isWritable = true) {
+        return function (target, propertyKey) {
+            const descriptor = {
+                get() {
+                    console.log(this, 'getter');
+                    return 'Oscar';
+                },
+                set(val) {
+                    // console.log(this, val)
+                    Object.defineProperty(this, propertyKey, {
+                        value: val,
+                        writable: !isWritable,
+                        enumerable: false
+                    });
+                }
+            };
+            return descriptor;
+        };
+    }
     //Decoradores
     let Pokemon = class Pokemon {
         constructor(name) {
@@ -48,6 +68,9 @@ define(["require", "exports"], function (require, exports) {
             console.log(`Pokemon guardado en base de datos ${id}`);
         }
     };
+    __decorate([
+        readonly(true)
+    ], Pokemon.prototype, "publicAPI", void 0);
     __decorate([
         CheckValidPokemonId() //La mandamos a llamar porque es un factory decorator, se tiene que ejecutar
     ], Pokemon.prototype, "savePokemonToDB", null);

@@ -31,12 +31,33 @@ function CheckValidPokemonId(){
         
     }
 }
+//factory decorator
+function readonly( isWritable: boolean = true ):Function{
+    return function(target:any, propertyKey:string){
+        const descriptor : PropertyDescriptor = {
+            get(){
+                console.log(this, 'getter')
+                return 'Oscar'
+            },
+            set(this, val){ //Sólo se dispara si está en modo lectura,  this = instancia de la clase
+                // console.log(this, val)
+                Object.defineProperty(this, propertyKey, {
+                    value: val,
+                    writable: !isWritable,
+                    enumerable: false
+                })
+            }
+        }
+        return descriptor;
+    }
+}
 
 //Decoradores
 @bloquearPrototipo
 @printToConsoleContidional(false)
 
 export class Pokemon {
+    @readonly(true)
     public publicAPI: string = 'https://pokeapi.co'
     constructor(
         public name: string,
