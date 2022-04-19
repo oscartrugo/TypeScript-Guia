@@ -19,6 +19,12 @@ define(["require", "exports"], function (require, exports) {
             return () => { }; //Retornamos una función vacía
         }
     };
+    //Decorador para bloquear el prototipo de una clase, no se va a poder expandir
+    const bloquearPrototipo = function (constructor) {
+        // Object.seal(constructor)
+        // Object.seal(constructor.prototype)
+    };
+    //Decoradores
     let Pokemon = class Pokemon {
         constructor(name) {
             this.name = name;
@@ -26,6 +32,7 @@ define(["require", "exports"], function (require, exports) {
         }
     };
     Pokemon = __decorate([
+        bloquearPrototipo,
         printToConsoleContidional(true)
     ], Pokemon);
     exports.Pokemon = Pokemon;

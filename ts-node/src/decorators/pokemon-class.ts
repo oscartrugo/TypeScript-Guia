@@ -11,6 +11,13 @@ const printToConsoleContidional = (print: boolean = false):Function => {
     }
 }
 
+//Decorador para bloquear el prototipo de una clase, no se va a poder expandir
+const bloquearPrototipo = function(constructor: Function){
+    // Object.seal(constructor)
+    // Object.seal(constructor.prototype)
+}
+//Decoradores
+@bloquearPrototipo
 @printToConsoleContidional(true)
 
 export class Pokemon {
