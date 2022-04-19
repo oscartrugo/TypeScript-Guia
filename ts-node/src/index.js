@@ -2,7 +2,7 @@ define(["require", "exports", "./generics/get-pokemon"], function (require, expo
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     (0, get_pokemon_1.getPokemon)(4)
-        .then(resp => console.log(resp))
+        .then(pokemon => console.log(pokemon.sprites.front_default))
         .catch(error => console.log(error))
         .finally(() => console.log('Fin de getPokemon'));
 });
