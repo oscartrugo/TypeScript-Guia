@@ -3,7 +3,15 @@ function printToConsole(constructor: Function){ //Decorador que se aplica a la c
     console.log(constructor) //Retorna el constructor de la misma
 }
 
-@printToConsole
+const printToConsoleContidional = (print: boolean = false):Function => {
+    if(print){
+        return printToConsole; //Mandamos como referencia a la función, no la estamos ejecutando
+    }else{
+        return () => {} //Retornamos una función vacía
+    }
+}
+
+@printToConsoleContidional(true)
 
 export class Pokemon {
     public publicAPI: string = 'https://pokeapi.co'
